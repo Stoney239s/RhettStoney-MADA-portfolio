@@ -7,23 +7,29 @@ output:
 
 
 ##Hello! 
+
 ![Rhett picture](C:\GitHub\MADA\RhettStoney-MADA-portfolio)
-My name is Rhett Stoney, and I am a third year DrPH student at UGA, and an epidemiologist in the Travelers' Health Branch of the Division of Global Migration and Quarantine at CDC. 
+My name is Rhett Stoney, and I am a third year DrPH student at UGA, and an epidemiologist in the Travelers' Health Branch of the Division of Global Migration and Quarantine at CDC.
 
 ###Background/Education.
-I am from Milwaukee, Wisconsin, and graduated from the University of Wisconsin-Madison with a Bachelor of Science (BS) in Medical Microbiology and Immunology in 2009. I moved to Atlanta in 2010, and earned my Master of Public Health (MPH) degree from Emory University in 2012, concentrating in epidemiology.  
+
+I am from Milwaukee, Wisconsin, and graduated from the University of Wisconsin-Madison with a Bachelor of Science (BS) in Medical Microbiology and Immunology in 2009. I moved to Atlanta in 2010, and earned my Master of Public Health (MPH) degree from Emory University in 2012, concentrating in epidemiology. At emory I learned how to use SAS, and I'm most comfortable coding in SAS 9.4 and SAS Enterprise Guide 7.1.  I am brand new to R.
 
 ###After graduation,
+
 I began an ORISE fellowship at CDC with the Travelers' Health Branch, earning a full-time position in 2015 when I was given the opportunity to deploy to Sierra Leone during the Ebola Epidemic. Today I continue emergency operations work, but much of my day-to-day (other than meetings..ugh) actually involves data analysis (more fun) and manuscript writing (less fun).
 
 ###Research
+
 My research within travel medicine spans several issues related to the health of international travelers. In consultation with tropical and travel medicine experts around the world, our Branch publishes *CDC Health Information for International Travel* (the Yellow Book) every two years, which contains recommendations and travel guidance for international travelers and the clinicians who may advise or treat them before, during, or after their trip. This includes issues not only surrounding travel-related infectious diseases, but also other unique health risks depending on the type of traveler, their travel destination(s), their reason(s) for traveling, age, duration of stay, etc.  Medical tourism, or travel abroad for the purpose of seeking medical or dental care, has been a particular research interest of mine the last few years, but I see a ton of potential in the field if we have the right tools to leverage the available data out there,especially in a field where getting access to the best available data is not possible or not realistic.
 
 ###Why I am taking this class
-I am taking this class because I am interested in learning new programming languages, their capabilities, and their current uses so I can think of new or improved ways to leverage the data to improve the studies in a challenging but growing field 
+
+I am taking this class because I am interested in learning new programming languages, their capabilities, and their current uses so I can think of new or improved ways to leverage data to improve the studies in a challenging but growing field. 
 
 
 ###Interesting fact about me....
+
 is that I actually used to build websites as a hobby when I was a kid. Let's just say I had a lot of time on my hands...one day I discovered the internet and my life was taken over. Born out of shear boredom, when I was 11, I built my first website by viewing the page source of websites I liked, copying their HTML code, and then manipulating it on my own using the available website building service providers that were around in the late 90's...on a dial-up modem. My mother would hate it because it would block our phone line for hours. When I was 14, I gave up building websites to pursue other interests...this is the first attempt I've made since! Full circle! :D
 
 Here is a link to [SAS Viya](https://www.sas.com/en_us/software/viya.html), a software program I have started to learn. It has some unique visual text analytics and visualization capabilities (if you're into that kind of thing).  
