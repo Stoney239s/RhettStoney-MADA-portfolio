@@ -1,11 +1,125 @@
 ---
-title: "R Coding Exercise"
-output: 
-  html_document:
-    toc: FALSE
+title: "Chunk1-Rmarkdown-install dslabs"
+output: html_document
 ---
 
-Placeholder file for the future R coding exercise.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
+## R Markdown
 
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#Load dsLabs package and plotting package
+```{r load dslabs}
+library('dslabs')
+library(ggplot2)
+```
+
+#look at help file for gapminder data
+```{r }
+help(gapminder)
+```
+
+#Get an overview of data structure
+
+```{r}
+str(gapminder)
+```
+
+#get a summary of the data
+```{r}
+summary(gapminder)
+```
+
+#determine the type of object gapminder is
+```{r}
+class(gapminder)
+```
+
+#Write code that assigns only the African countries to a new object/variable called africadata.
+```{r}
+
+africadata <-  gapminder[which(gapminder$continent=='Africa'), ]
+```
+
+africadata
+
+#Running str and summary functions
+```{r}
+str(africadata)
+summary(africadata)
+```
+
+#Create two new objects, one containing infant_mortality and life_expectancy, the other population and life_expectancy
+```{r}
+InfMortandLifeExp <- africadata[ ,c(3,4)]
+
+PopandLifeExp <- africadata[ ,c(6,4)]
+```
+
+#checking new created objects
+head(InfMortandLifeExp)
+
+head (PopandLifeExp)
+
+#Running str and summary commands on InfMortandLifeExp and PopandLifeExp
+str(InfMortandLifeExp)
+
+summary(InfMortandLifeExp)
+
+str(PopandLifeExp)
+
+summary(PopandLifeExp)
+
+#plotting life expectancy as a function of infant mortality
+plot(InfMortandLifeExp$infant_mortality, InfMortandLifeExp$life_expectancy)
+
+#plotting life expectancy as a function of population size
+plot(PopandLifeExp$population, PopandLifeExp$life_expectancy)
+
+# set x axis to a log scale for plot of life expectancy as a function of population size
+plot(log(PopandLifeExp$population), PopandLifeExp$life_expectancy)
+
+#Selecting data from year 2000 from africadata
+yr2000AfricaData <-  africadata[which(africadata$year==2000), ]
+
+#checking result
+yr2000AfricaData
+
+#plotting life expectancy as a function of infant mortality - Year 2000
+plot(yr2000AfricaData$infant_mortality, yr2000AfricaData$life_expectancy)
+
+#plotting life expectancy as a function of population size - Year 2000
+plot(log(yr2000AfricaData$population), yr2000AfricaData$life_expectancy)
+
+#Creating simple fit using lm function - life expectancy=outcome infant mortality=predictor
+fit1 <- lm(life_expectancy~infant_mortality, data = yr2000AfricaData)
+
+#Creating simple fit using lm function - life expectancy=outcome pop size=predictor
+fit2 <- lm(life_expectancy~population, data = yr2000AfricaData)
+
+#running summary function for fit1 and fit2
+summary(fit1)
+summary(fit2)
+
+#P value for fit1 is 2.83e-08 so there is acorrelation between life expectancy and infant mortality
+
+#P value for fit2 is 0.616 so there is not a correlation between life expectancy and population size
