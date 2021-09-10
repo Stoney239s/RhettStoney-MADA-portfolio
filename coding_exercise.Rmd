@@ -123,3 +123,20 @@ summary(fit2)
 #P value for fit1 is 2.83e-08 so there is acorrelation between life expectancy and infant mortality
 
 #P value for fit2 is 0.616 so there is not a correlation between life expectancy and population size
+
+
+# Zhihan's Section
+```{r}
+# extract data for south africa
+sa = africadata[africadata$country=="South Africa",]
+# see the country's GDP growth over time
+plot(sa$year,sa$gdp, main="South Africa GDP Growth", xlab = "Year", ylab = "GDP")
+
+# see the corelation btw life_expectancy and GDP
+fit3 <- lm(life_expectancy~gdp, data = sa)
+summary(fit3)
+
+# p = 0.02, meaning over 95% confidence that GDP and life expectancy are positively correlated for South Africa
+```
+
+
